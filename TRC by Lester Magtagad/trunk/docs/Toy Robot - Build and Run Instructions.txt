@@ -1,0 +1,73 @@
+==================================================
+Files
+==================================================
+Folder structure:
+
+|- Releases
+   |- packages/binary
+|- Trunk
+   |- builds         # build files, solutions, etc.
+   |- docs           # documentations
+   |- include        # where .h files are located
+   |- src            # where .cpp files are located
+
+
+==================================================
+Important file(s)
+==================================================
+# Location when you build the solution
+1. \TRC by Lester Magtagad\trunk\builds\Windows\ToyRobotConsole\Release\ToyRobotConsole.exe
+
+# Runnable binary/exe
+2. \TRC by Lester Magtagad\releases\ToyRobotConsole_v1.0.exe
+
+#Restrictions/limitations
+3. \TRC by Lester Magtagad\trunk\docs\Toy Robot Restriction File.txt
+
+#Build instruction
+4. \TRC by Lester Magtagad\trunk\docs\Toy Robot - Build and Run Instructions.txt
+
+==================================================
+Launch instructions
+==================================================
+
+1) Execute "ToyRobotConsole.exe" or "ToyRobotConsole_v1.0.exe"
+
+2) Type commands:
+   PLACE X,Y,facing    -> This should be the first command
+   MOVE                -> move one unit
+   LEFT                -> rotate left 90 degrees
+   RIGHT               -> rotate right 90 degrees
+   REPORT              -> report current state
+   exit                -> exit program
+
+==================================================
+Build instructions
+==================================================
+
+1) unzip/extract the file
+2) open visual studio
+3) navigate to the File tab
+4) under file tab hover "Open" option
+5) under Open option click project/solution
+6) select the solution where the file is located
+7) build the solution either Release or Debug mode
+
+OR
+
+1) Extract the folder
+2) Open the solution in \TRC by Lester Magtagad\trunk\builds\Windows\ToyRobotConsole\ToyRobotConsole.sln
+3) build the solution either Release or Debug mode
+
+NOTE:
+
+- please add the location of the header files and source files in the actual path where the files are located in the configuration manager.
+- in solutions explorer right click ToyRobotConsole project
+- select properties, a new dialog will appear
+- Select "All Configurations" under configuration dropdown menu
+- Under Configuration properties, select VC++ Directories
+- select Include Directories and add the correct path where the "../trunk/include/" folder is located
+- click apply and save
+- select Source Directories and add the correct path where the "../trunk/source/" folder is located
+- click apply and save
+- close the dialog
